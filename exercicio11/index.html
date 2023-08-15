@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Vídeos com HTML5</title>
+    </head>
+
+    <body>
+        <h1>Inserindo vídeos hospedados localmente</h1>
+        
+        <p>Este vídeo está hospedado no meu próprio servidor</p>
+        <video src="midia/Anoitecer.m4v" width="850" controls></video><!--Mesma coisa que com os aúdios, assim se limita a apenas um tipo de arquivo. Vamos fazer da forma correta.-->
+
+        <br>
+        <video width="850" controls poster="imagens/O Fim.png"><!--O poster é a thumb do vídeo-->
+            <source src="midia/Anoitecer.m4v" type="video/mp4">
+            <source src="midia/Anoitecer.ogv" type="video/ogg">
+            <source src="midia/anoitecer.mp4" type="video/mp4">
+            <source src="midia/Anoitecer.webm" type="video/webm">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+        </video>
+
+        <h1>Inserindo vídeos do YouTube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!--Além do youtube, é possível usar vídeos de várias outras fontes pra que não custe tanta banda no teu site, como no vimeo.-->
+    </body>
+</html>

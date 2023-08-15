@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* Sempre no final de toda fonte family colocar uma fonte segura onde o próprio dispositivo pode escolher, se for serifada (serif), sem serifa (sans-serif), monoespaçada (monospace), cursiva (cursive) e fontes fantasiosas (fantasy) */
+h1, h2 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em ;
+    /* Medidas Absolutas
+    cm, mm, in (polegada), px, pt (ponto), pc. Recomendável apenas usar o px
+    
+    Medidas Relativas
+    em (medida relativa ao tamanho maiúsculo da fonte), ex (relativa a altura x (minúsculo) da fonte), rem (como o em, mas relativa a fonte que tá no body), vw, vh, %. Recomendável apenas usar o em 
+    16px geralmente = 1em */
+}
+
+p {
+    /* Peso das fontes (escala em negrito) - lighter, normal, bold, bolder. Verificar se a fonte que for usar é capaz de executar os comandos (se tem negrito, itálico, sublinhado. Atalho para configurações rápidas e compactadas na fonte através do comando global font. A ordem é
+    font-style -> font-weight -> font-size -> font-family */
+    font: italic bolder 1em 'Franklin Gothic Medium', sans-serif;
+}

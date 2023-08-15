@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Fontes Externas baixadas</title>
+
+        <style>
+            @font-face {
+                font-family: 'letra';
+                src: url('fontes/Bimbo Trial.ttf') format(truetype), url('fontes/Bimbo Ballpoint Trial.ttf') format(truetype), url('fontes/Bimbo Dripping Jumbo Trial.ttf') format(truetype), url('fontes/Bimbo Finetip Trial') format(truetype), url('fontes/Bimbo Jumbo Trial.ttf'), url('fontes/Bimbo Sharpie Trial.ttf') format(truetype), url('fontes/Bimbo Trial.ttf') format(truetype), url('fontes/Bimbo Whiteboard Trial.ttf') format(truetype);
+                font-weight: normal;
+                font-style: normal;
+            } /* Tipos de format ()
+            opentype (otf)
+            truetype (ttf) 
+            embed-opentype
+            truetype-aat (Apple Advanced Typography
+            svg. A regra acima é um jeito de usar fontes baixadas */
+            
+            body {
+                font-family: serif;
+            }
+
+            h1 {
+                font-family: 'letra';
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Fonte personalizada e baixada</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, repudiandae quod nobis rem aliquam ad, voluptatem eaque assumenda quia, reiciendis ducimus repellendus eligendi autem velit nesciunt rerum explicabo debitis saepe!</p>
+    </body>
+</html> 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Outras formatações</title>
+    </head>
+
+    <body>
+        <h2>Código-fonte</h2>
+        <p>O comando <code>document.getElementById('rurf')</code> está em linguagem JavaScript.</p>
+
+        <h2>Tabulação</h2>
+        <p><pre>
+algoritmo "ContagemInteligente"
+var
+
+    c,t: Inteiro
+
+inicio
+
+        Escreva ("Qual o número inicial da contagem? ")
+        Leia (c)
+        Escreva ("Qual o número final da contagem? ")
+        Leia (t)
+        Escreva ("Executando contagem ")
+        
+        Se (c >= t) entao
+            EscrevaL ("regressiva...")
+            Enquanto (c >= t) faca
+                EscrevaL (c)
+                c <- c - 1
+            FimEnquanto
+
+        Senao
+            EscrevaL ("progressiva...")
+            Enquanto (t >= c) faca
+                EscrevaL (c)
+                c <- c + 1
+            FimEnquanto
+        FimSe
+
+fimalgoritmo</pre></p>
+        
+        <p><pre>
+Tudo dentro do &lt;pre&gt; fica        do         jeito
+  que        eu  
+  qu   i    ser
+  porém, com as letras de código (monoespaçadas).
+        </pre></p>
+
+        <h2>Citações</h2>
+        <p>Como dizia um velho sábio: <q>slep no flep no check...</q></p>
+        <p>A tag de citações é a tag &lt;q&gt; que significa <q>quote</q> (citação), e faz apenas duas aspas duplas, porém dá mais sentido (semântica) usar a tag que colocar as duas aspas duplas no texto manualmente.</p>
+
+        <h2>Citações completas</h2>
+        <p>Como dizia um velho sábio: <blockquote cite="https://www.youtube.com/watch?v=tRRW8SKNjhs">slep no flep no check... slop afogando meu pau na xereca... rocket ploc... ploc ploc... pula ni mim perereca</blockquote></p>
+        <p>A tag de citações completas quebra linha, deixa o texto deslocado e serve para citações mais longas. Também é possível deixar o link da citação que pode ser visto na parte interna do código</p>
+
+        <h2>Abreviações</h2>
+        <p><abbr title="HyperText Markup Language">HTML</abbr>e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+        <h2>Texto invertido</h2>
+        <p><bdo dir="rtl">Sua <bdo dir="ltr">mãe</bdo> é minha?</bdo></p>
+        <p>dir (direção, porém em inglês) ltr/rtl (left to right/right to left) da esquerda pra direita ou da direita pra esquerda</p>
+    </body>
+</html> 

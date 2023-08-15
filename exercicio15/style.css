@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+   /* height: 100%; */
+}
+
+body {
+    background-image: linear-gradient(to top, #10506B, #1586B8, #4AC9FF);
+}
+
+main {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 6px 6px 11px rgba(0, 0, 0, 0.411); /* O border radius deixará a borda do elemento arredondada, o box-shadow cria uma sombra para esse elemento, e o margin auto centraliza ele independente de como a tela estiver. */
+    width: 550px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    color: #075A6B;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.411);
+}
+
+h2 {
+    color: #F58238;
+}
+
+p {
+    text-align: justify;
+}

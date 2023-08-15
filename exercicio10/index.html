@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Mídias</title>
+    </head>
+
+    <body>
+       <h1>Imagens dinâmicas</h1>
+       <p>Abra o site em vários dispositivos diferentes.</p> 
+
+       <picture> <!--Deixe na ordem como está abaixo se não, não funcionará-->
+        <source media="(max-width: 750px)" srcset="imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem-m.png" type="image/png">
+        <img src="imagem-g.png" alt="imagem flexível">
+       </picture>
+
+       <h1>Usando áudios</h1>
+       <p>Algum dia isso aqui fica bom</p>
+       <audio src="sons/primeira batida.mp3" controls></audio><!--Essa é uma forma limitada não compatível com todos os sites-->
+
+       <audio preload="metadata" controls><!--Depois/antes do controls também é possível adicionar o autoplay (para iniciar o áudio sozinho) ou o loop (quando acabar, reinicia)-->
+        <source src="sons/primeira batida.mp3" type="audio/mpeg">
+        <source src="sons/primeira batida.ogg" type="audio/ogg">
+       </audio> <!--Desse jeito irá carregar o primeiro áudio (mp3) e caso ele não seja compatível com o site irá carregar o próximo (ogg)-->
+    </body>
+</html> 

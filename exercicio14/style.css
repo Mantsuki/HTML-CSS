@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    color: slategrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: crimson;
+}
+h2 {
+    color:dimgrey
+}
+p {
+    text-align: justify; color: black;
+}

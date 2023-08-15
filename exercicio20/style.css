@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    background-color: #9eedff60;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #FFB741;
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    color: #1A8DFF;
+    margin-left: 30px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    color: #5ABAFF;
+    margin-left: 30 px;
+}
+
+p {
+    background-color: white;
+    color: black;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+nav {
+    text-align: center;
+}
+
+.sadaidm {
+    color: rgb(0, 128, 255);
+}

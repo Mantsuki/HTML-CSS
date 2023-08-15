@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&display=swap');
+
+@font-face {
+    font-family: Android;
+    src:url('../fontes/idroid.otf');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --fundo: #c5ebd6;
+    --lighter: #83e1ad;
+    --light: #3ddc84;
+    --normal: #2fa866;
+    --bold: #1a5c37;
+    --bolder: #0e301c;
+
+    --fonte-padrao: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background-color:var(--fundo);
+    font-family: var(--fonte-padrao)
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+main p {
+    margin: 1em 0em;
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+main strong {
+    font-weight: bold;
+    color: var(--bolder);
+}
+
+main a {
+    padding: 2px 6px;
+    background-color: var(--lighter);
+    text-decoration: none;
+    color: var(--bolder);
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--normal);
+}
+
+main h2 {
+    color: var(--bold);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--lighter), transparent);
+    text-indent: 11px;
+}
+
+main h1 {
+    background-image: linear-gradient(to right, var(--light), transparent);
+    text-indent: 11px;
+}
+
+header {
+    background-color: var(--bold);
+    min-height: 133px;
+    text-align: center;
+    padding-top: 1em;
+    background-image: linear-gradient(to bottom, var(--normal), var(--bolder));
+}
+
+header > h1 {
+    font-weight: normal;
+    color:white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 16px;
+    font-size: 3em;
+    text-shadow: 1px 1px 11px rgba(0, 0, 0, 0.9);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 570px;
+    margin: auto;
+    padding: 0px 11px 16px 11px;
+    text-shadow: 1px 1px 11px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background-color: var(--bolder);
+    padding: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: auto;
+}
+
+
+
+nav > a {
+    color: var(--lighter);
+    padding: 4px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.6em 0.6em 0em 0em;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--normal);
+    color: var(--bold);
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    border-radius: 0em 0em 1em 1em;
+}
+
+div.video {
+    margin: 0px -20px 50px -20px;
+    background-color: var(--bolder);
+    padding: 1em;
+    position: relative;
+    padding-bottom: 57%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main img {
+    width: 100%;
+}
+
+main h1 {
+    color:var(--bolder);
+    font-family: var(--fonte-android);
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    font-weight: normal;
+}
+
+aside {
+    background-color: var(--light);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside > h3 {
+    background-color: var(--bolder);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    /*columns: 2;*/
+    list-style-type: '\2714\00A0\00A0';
+}
+
+footer {
+    background-color: var(--bolder);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 4px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--normal);
+}
+
+.imgpq {
+    max-width: 250px;
+    margin: auto;
+    display: block;
+}

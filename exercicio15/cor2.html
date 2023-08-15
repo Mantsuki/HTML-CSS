@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Gradiente em CSS</title>
+
+        <style> /* Configuração global das CSS é "*" */
+           * { 
+            height: 100%;
+           }
+           
+           body {
+                background-image: linear-gradient(to top, #085269, #0F91B7, #61DAFF); /* Também é possível depos do "top" usar por exemplo "45deg" para o degradê ficar virado 45 graus. Também é possível criar um gradiente circular (radial) substituindo o linear por radial. Se colocar porcentagem depois de alguma cor, definirá o quanto ela ocupará de espaço na tela */
+                background-attachment: fixed; /* O degradê fica fixo, não reseta */
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Testando Gradiente</h1>
+    </body>
+</html> 

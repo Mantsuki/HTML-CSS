@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Links</title>
+
+        <style>
+            /* 
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+            */
+            body {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color: #00aca44f;
+            }
+
+            a {
+                color: #dd6a2c;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            
+            a:visited {
+                color: #b3470d;
+            }
+            
+            a:hover {
+                text-decoration: underline;
+                color: black;
+            }
+
+            a:active {
+                color: #005f5ab4;
+            }
+
+            #especial::after {
+                content: "<-";
+            }
+
+            #especial::before {
+                content: "->";
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Personalizando links</h1>
+        <ul>
+            <li><a id="especial" href="https://www.tudogostoso.com.br/receita/69468-pao-de-queijo-facil-e-delicioso.html" target="_blank" rel="next">Pão de queijo</a>
+            <li><a id="especial" href="https://www.receitasnestle.com.br/receitas/sorvete-de-morango" target="_blank" rel="next">Sorvete de morango</a>
+            <li><a id="especial" href="https://cybercook.com.br/receitas/lanches/receita-de-misto-quente-4538" target="_blank" rel="next">Presunto e mussarela</a>
+        </ul>
+    </body>
+</html> 
